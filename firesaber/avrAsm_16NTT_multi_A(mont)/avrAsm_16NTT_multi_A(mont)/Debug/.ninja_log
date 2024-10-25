@@ -1,0 +1,24 @@
+# ninja log v5
+5	8127	7373541277103342	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/main.r90	254f70b23041e9a8
+7	8368	7373541279485708	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/cbd.r90	f43595030e041740
+22	8463	7373541280456726	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/pack_unpack.r90	f8b2f3843210845d
+18	8556	7373541281385148	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/verify.r90	42358e3aeab01a50
+13	8630	7373541282128338	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/randombytes.r90	f0f182e415111ff6
+3	8658	7373541282410057	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/kem.r90	52172d68f92d171f
+10	8731	7373541283143857	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/SABER_indcpa.r90	eec3bdc4d6fe93c6
+16	13100	7373541326753803	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/poly.r90	e4fe06d573734f41
+0	30627	7373541501994057	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/fips202.r90	44bae0073168bd9e
+30628	30750	7373541503271328	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Exe/avrAsm_16NTT_multi_A(mont).d90	a6bdb493f565c8fa
+1	18	7373776927514187	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/ntt7681_mont_asm.r90	2a47c74680fd6457
+4	20	7373776927529236	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/ntt10753_mont_asm.r90	d6ab14986dbc6e18
+6	5230	7373776979518882	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/poly.r90	e4fe06d573734f41
+5231	5369	7373776980919941	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Exe/avrAsm_16NTT_multi_A(mont).d90	27ee907159259ee4
+1	17	7373866551306199	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/invntt10753_mont_asm.r90	d8071871c5f31252
+4	19	7373866551316231	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/invntt7681_mont_asm.r90	37ded81dae2ca5e2
+6	110	7373866552183624	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/main.r90	254f70b23041e9a8
+9	3303	7373866584052834	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/poly.r90	e4fe06d573734f41
+3304	3430	7373866585308194	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Exe/avrAsm_16NTT_multi_A(mont).d90	e1a03590132f9c6c
+1	13	7373867363263396	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/invntt10753_mont_asm.r90	d8071871c5f31252
+4	15	7373867363273400	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/invntt7681_mont_asm.r90	37ded81dae2ca5e2
+7	3289	7373867395909871	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Obj/poly.r90	e4fe06d573734f41
+3290	3407	7373867397086480	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrAsm_16NTT_multi_A(mont)/avrAsm_16NTT_multi_A(mont)/Debug/Exe/avrAsm_16NTT_multi_A(mont).d90	e1a03590132f9c6c

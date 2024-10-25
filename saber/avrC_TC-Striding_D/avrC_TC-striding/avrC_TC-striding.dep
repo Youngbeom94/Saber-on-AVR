@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2243250345</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\fips202.c</file>
+            <file>$PROJ_DIR$\..\poly.c</file>
+            <file>$PROJ_DIR$\..\pack_unpack.h</file>
+            <file>$PROJ_DIR$\..\verify.h</file>
+            <file>$PROJ_DIR$\..\randombytes.h</file>
+            <file>$PROJ_DIR$\..\SABER_indcpa.c</file>
+            <file>$PROJ_DIR$\..\kem.c</file>
+            <file>$PROJ_DIR$\..\pack_unpack.c</file>
+            <file>$PROJ_DIR$\..\randombytes.c</file>
+            <file>$PROJ_DIR$\..\keccakf1600.h</file>
+            <file>$PROJ_DIR$\..\verify.c</file>
+            <file>$PROJ_DIR$\..\fips202.h</file>
+            <file>$PROJ_DIR$\..\poly.h</file>
+            <file>$PROJ_DIR$\..\api.h</file>
+            <file>$PROJ_DIR$\..\cbd.c</file>
+            <file>$PROJ_DIR$\..\SABER_indcpa.h</file>
+            <file>$PROJ_DIR$\..\SABER_params.h</file>
+            <file>$PROJ_DIR$\..\main.c</file>
+            <file>$PROJ_DIR$\..\cbd.h</file>
+        </outputs>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

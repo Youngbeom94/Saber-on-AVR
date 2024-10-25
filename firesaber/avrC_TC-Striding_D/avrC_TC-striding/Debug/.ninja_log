@@ -1,0 +1,11 @@
+# ninja log v5
+24	3556	7334803542915173	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/randombytes.r90	b89a80560a106a1a
+4	3622	7334803543573583	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/kem.r90	a04024e72441ad4f
+7	3733	7334803544690008	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/main.r90	a9f8c597074b197f
+12	3769	7334803545041303	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/SABER_indcpa.r90	642e3a5b56383f55
+21	3843	7334803545789471	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/verify.r90	1b1c8578c4aa6b68
+9	3850	7334803545830099	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/cbd.r90	cacd90c2a163586
+18	4227	7334803549606615	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/pack_unpack.r90	ac049bbc4841e1ae
+14	7457	7334803581774462	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/poly.r90	87a13e4cf709ff48
+1	26409	7334803771344904	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Obj/fips202.r90	edb2d1e5b664e062
+26411	26521	7334803772514577	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_TC-Striding/avrC_TC-striding/Debug/Exe/avrC_TC-striding.d90	4e3bc4d8f206dbb4

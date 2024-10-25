@@ -1,0 +1,27 @@
+# ninja log v5
+13	216	7332179381626964	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/randombytes.r90	cc5880b90ba4fdae
+3	226	7332179381707199	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/main.r90	c266a6897a258f12
+29	237	7332179381806005	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/verify.r90	bf1725bcb4144cc5
+0	248	7332179381891142	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/kem.r90	af2d10f71161717a
+25	264	7332179382107132	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/SABER_indcpa.r90	d761d5106dd42dd2
+10	339	7332179382865087	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/cbd.r90	771dc0cf0a1387bb
+17	630	7332179385767020	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/pack_unpack.r90	bea871d2a590e304
+20	2719	7332179406635769	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/poly.r90	9d3632eef5b188c9
+7	23502	7332179614398340	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/fips202.r90	723342778b9e899d
+23504	23624	7332179615647639	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Exe/iar_saber_avrC_32NTT(barrett).d90	479cb2c58f220a0b
+1	2822	7332181078117135	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/kem.r90	af2d10f71161717a
+19	3019	7332181080088291	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/SABER_indcpa.r90	d761d5106dd42dd2
+5	3077	7332181080667572	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/main.r90	c266a6897a258f12
+10	3086	7332181080752733	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/cbd.r90	771dc0cf0a1387bb
+16	3495	7332181084834242	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/pack_unpack.r90	bea871d2a590e304
+13	5178	7332181101590296	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/poly.r90	9d3632eef5b188c9
+8	26650	7332181316293933	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/fips202.r90	723342778b9e899d
+26652	26758	7332181317413490	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Exe/iar_saber_avrC_32NTT(barrett).d90	479cb2c58f220a0b
+15	154	7332183592052780	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/SABER_indcpa.r90	d761d5106dd42dd2
+5	156	7332183592042783	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/main.r90	c266a6897a258f12
+1	173	7332183592242782	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/kem.r90	af2d10f71161717a
+10	256	7332183593063578	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/cbd.r90	771dc0cf0a1387bb
+12	563	7332183596141507	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/pack_unpack.r90	bea871d2a590e304
+18	2651	7332183616988134	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/poly.r90	9d3632eef5b188c9
+7	22802	7332183818424787	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Obj/fips202.r90	723342778b9e899d
+22803	22918	7332183819604871	C:/Users/daran/Documents/GitHub/dilithium_embedded/code_kem/crypto_kem/saber/avrC_32NTT_D(barrett)/iar_saber_avrC_32NTT(barrett)/Debug/Exe/iar_saber_avrC_32NTT(barrett).d90	479cb2c58f220a0b

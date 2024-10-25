@@ -1,0 +1,130 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = D$:\IAR\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = D$:\IAR\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = D$:\IAR\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = D$:\IAR\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\cbd.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\cbd.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\fips202.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\fips202.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\kem.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\kem.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\main.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\main.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\pack_unpack.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\pack_unpack.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\poly.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\poly.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\randombytes.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\randombytes.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\SABER_indcpa.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\SABER_indcpa.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\verify.c -xcl_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.xcl -macro_file C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.tmp -icc_path D$:\IAR\avr\bin\iccavr.exe
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\verify.c -v6 --enhanced_core -mh -o C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\Obj\ -y --initializers_in_flash --debug -e --dlib --dlib_config DLib_Config_Normal.h -Ohs --predef_macros C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.tmp
+  rspfile_name = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.xcl.rsp
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\cbd.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\fips202.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\kem.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\main.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\pack_unpack.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\poly.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\randombytes.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\SABER_indcpa.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.pbi : INDEXER C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.xcl |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\verify.c
+  flags = -out=C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.pbi -f C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.xcl
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4.pbw : MAKEBROWSE C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4.pbd
+  flags = C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4.pbd -output C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4.pbw
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part0.pbi : PDBLINK C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.pbi |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.pbi $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.pbi
+  flags = -M C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part0.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\cbd.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\fips202.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\kem.pbi
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part1.pbi : PDBLINK C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.pbi |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.pbi $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.pbi
+  flags = -M C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part1.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\main.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\pack_unpack.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\poly.pbi
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part2.pbi : PDBLINK C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.pbi |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.pbi $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.pbi
+  flags = -M C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part2.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\randombytes.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\SABER_indcpa.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\verify.pbi
+
+build C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4.pbd : PDBLINK C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part0.pbi |  $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part1.pbi $
+C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part2.pbi
+  flags = -M C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4.pbd C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part0.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part1.pbi C$:\Users\daran\Documents\GitHub\dilithium_embedded\code_kem\crypto_kem\saber\avrC_ToomCook4_D\iar_saber_avrC_ToomCook4\Debug\BrowseInfo\iar_saber_avrC_ToomCook4_part2.pbi
+
